@@ -1,92 +1,59 @@
-# 🎲 Elysian Oracle - TRPG Dice Roller
+# ◈ Elysian Dice Oracle
 
-> A modern and stylish TRPG dice roller with beautiful UI/UX design, multiple dice types, roll history, and smooth animations.
->
-> ## 🌟 Features
->
-> - **Multiple Dice Types**: Support for D4, D6, D8, D10, D12, D20, and Coin Flip
-> - - **Beautiful UI/UX Design**: Dark theme with stunning gradients and smooth animations
->   - - **Multiple Rolls**: Roll multiple dice at once with ease
->     - - **Roll History**: Keep track of all your rolls with a comprehensive history
->       - - **Elegant Animations**: Smooth transitions and visual effects for an immersive experience
->         - - **Responsive Design**: Works seamlessly on desktop and mobile devices
->           - - **AI-Powered**: Built with Google Gemini AI for intelligent features
->            
->             - ## 🚀 Quick Start
->            
->             - ### View the App
->            
->             - Visit the live application here: **[Elysian Oracle](https://ai.studio/apps/drive/1vg0mTr94Gwip3rME1W)**
->
-> ### Run Locally
->
-> This contains everything you need to run your app locally.
->
-> **Prerequisites:** Node.js
->
-> 1. Install dependencies:
-> 2. ```bash
->    npm install
->    ```
->
-> 2. Set the `GEMINI_API_KEY` in `.env.local` to your Gemini API key
->
-> 3. 3. Run the app:
->    4. ```bash
->       npm run dev
->       ```
->
-> ## 📁 Project Structure
->
-> ```
-> elysian-oracle/
-> ├── components/          # React components
-> │   └── DiceIcon.tsx    # Dice icon component
-> ├── services/           # Service modules
-> │   └── geminiService.ts # Gemini API integration
-> ├── App.tsx            # Main application component
-> ├── index.tsx          # Entry point
-> ├── index.html         # HTML template
-> ├── constants.tsx      # Application constants
-> ├── types.ts           # TypeScript type definitions
-> ├── vite.config.ts     # Vite configuration
-> ├── tsconfig.json      # TypeScript configuration
-> └── package.json       # Dependencies and scripts
-> ```
->
-> ## 🛠️ Technologies Used
->
-> - **Frontend**: React, TypeScript
-> - - **Styling**: CSS with modern design patterns
->   - - **Build Tool**: Vite
->     - - **AI Integration**: Google Gemini API
->       - - **State Management**: React Hooks
->        
->         - ## 🎮 How to Use
->        
->         - 1. **Select a Dice Type**: Choose from D4, D6, D8, D10, D12, D20, or Coin Flip
->           2. 2. **Set Quantity**: Use the slider to select how many dice to roll
->              3. 3. **Roll**: Click the "ROLL DICE" button
->                 4. 4. **View Results**: Check your roll result and the roll history
->                   
->                    5. ## 🤖 Created with AI
->                   
->                    6. This application was created using **Claude AI in Chrome** and **Google AI Studio**. The entire project structure, UI components, and functionality were generated using AI assistance, demonstrating the power of modern AI-powered development tools.
->                   
->                    7. - **AI Development Tool**: Google AI Studio with Gemini 3 Flash
-> - **AI Assistant**: Claude AI in Chrome
-> - - **Repository**: Automatically deployed to GitHub
->  
->   - ## 📄 License
->  
->   - This project is provided as-is for educational and entertainment purposes.
->  
->   - ## 🔗 Links
->
->   - - **Live App**: https://ai.studio/apps/drive/1vg0mTr94Gwip3rME1W
->     - - **GitHub Repository**: https://github.com/Sunwood-ai-labs/elysian-oracle
->       - - **Gemini API**: https://ai.google.dev/
->        
->         - ---
->
-> Enjoy your rolls! 🎲✨
+A high-end, stylish TRPG dice roller designed for immersive roleplaying sessions. Elysian Oracle combines elegant glassmorphism aesthetics with the power of AI to provide not just numbers, but narrative context for your game.
+
+## ✨ Created with AI
+This app was created using **Claude AI in Chrome** and **Google AI Studio** with **Gemini 3 Flash**.
+
+## 🚀 Quick Start
+You can access the live application here:
+[**Launch Elysian Dice Oracle**](https://ai.studio/apps/drive/1vg0mTr94Gwip3rME1W)
+
+## 🌟 Detailed Features
+- 🎲 **Full Polyhedral Set**: Support for d4, d6, d8, d10, d12, and d20.
+- 🪙 **Coin Flip**: Elegant heads or tails mechanic for simple binary fates.
+- 🔮 **AI Narrative Oracle**: Powered by Gemini 3 Flash, the app interprets your rolls into 1-2 sentences of thematic story description.
+- 📈 **Multiple Rolls**: Roll up to 10 dice at once with automatic total calculation.
+- 📜 **Fate History**: Keep track of your last 20 rolls with timestamps and AI interpretations.
+- 🎨 **Premium UI/UX**: Dark-themed glassmorphism design with smooth transitions and tumble animations.
+- 📱 **Responsive Design**: Fully functional on desktop and mobile browsers.
+
+## 🛠 Technologies Used
+- **React 19**: For modular and performant UI components.
+- **Tailwind CSS**: For high-end styling and responsive layout.
+- **Google Gemini API (@google/genai)**: Specifically using the `gemini-3-flash-preview` model for low-latency narrative generation.
+- **TypeScript**: Ensuring type safety across the application.
+- **ESM.sh**: Direct module imports for a lightweight, build-less feel.
+
+## 📂 Project Structure
+```text
+.
+├── index.html                # Entry point & Tailwind configuration
+├── index.tsx                 # React application root
+├── App.tsx                   # Main application logic & UI orchestration
+├── types.ts                  # Global TypeScript interfaces
+├── constants.tsx             # Dice configurations & visual constants
+├── metadata.json             # App manifest & permissions
+├── services/
+│   └── geminiService.ts      # Google GenAI SDK implementation
+└── components/
+    └── DiceIcon.tsx          # Custom SVG/CSS dice shape rendering
+```
+
+## 📖 How to Use
+1. **Choose Your Weapon**: On the left sidebar, select the type of die you wish to roll (e.g., d20 for initiative).
+2. **Set the Scale**: Use the slider to select how many dice you are rolling (1 to 10).
+3. **Cast Fate**: Click the large **ROLL DICE** button. Watch the tumble animation as the numbers settle.
+4. **Consult the Oracle**: Once the result appears, click **"Interpret this Fate"**. The AI will analyze your total and individual dice to provide a DM-style narrative snippet.
+5. **Review History**: Scroll through the history panel on the left to see previous rolls and their interpretations.
+
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🔗 Links
+- **Gemini API Documentation**: [ai.google.dev](https://ai.google.dev/)
+- **Project Repository**: [GitHub](https://github.com/)
+- **Live App**: [Elysian Oracle](https://ai.studio/apps/drive/1vg0mTr94Gwip3rME1W)
+
+---
+*May your crits be natural and your adventures legendary.*
